@@ -107,6 +107,7 @@ addWorklog(){
 
 saveWorklogs(){
   this.worklogService.saveWorklogs(this.sendWorklogRequests).subscribe(()=>{
+    this.logWork();
     this.getEmployeeWorklogs();
   });
   

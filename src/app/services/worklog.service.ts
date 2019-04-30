@@ -16,7 +16,7 @@ export class WorklogService {
   }
 
   saveWorklogs(empWorklogs) {
-    debugger;
+    
     return this.http.post(this.baseapi + "/worklog/SaveWorkLog", JSON.stringify(empWorklogs), {
         headers: new HttpHeaders({
             'Content-Type' : 'application/json'
